@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -26,6 +27,36 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+header #login-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  color: #1a237e;
+}
+
+#login-dialog {
+  margin: auto;
+  max-width: 400px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#login-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+}
+
+#login-status {
+  margin-top: 10px;
 }
 
 main {
